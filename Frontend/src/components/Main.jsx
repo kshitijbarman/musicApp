@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Slidebar from "./Slidebar";
@@ -41,7 +40,6 @@ const Main = () => {
     fetchSongs();
   }, [searchQuery]);
 
-
   useEffect(() => {
     const savedLikes = localStorage.getItem("likedSongs");
     if (savedLikes) {
@@ -49,8 +47,6 @@ const Main = () => {
     }
   }, []);
 
-  
-  
   const playSong = (song) => {
     const highestQuality =
       song.downloadUrl?.find((file) => file.quality === "320kbps") ||
@@ -88,7 +84,6 @@ const Main = () => {
     });
   };
 
-
   if (loading) {
     return (
       <div
@@ -100,8 +95,6 @@ const Main = () => {
       </div>
     );
   }
-
-  
 
   return (
     <div
@@ -158,9 +151,16 @@ const Main = () => {
                   )}
                 </button>
 
-                <span
+                {/* <span
                   className={` ${
                     darkMode ? "bg-[#f5f5f5]" : "bg-black text-white"
+                  }`}
+                >
+                  {song.name}
+                </span> */}
+                <span
+                  className={`inline-block max-w-[6rem] overflow-hidden text-ellipsis whitespace-nowrap text-sm rounded px-2 py-1 ${
+                    darkMode ? "bg-[#f5f5f5] text-black" : "bg-black text-white"
                   }`}
                 >
                   {song.name}

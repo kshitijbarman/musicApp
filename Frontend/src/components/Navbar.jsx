@@ -57,11 +57,11 @@ const Navbar = () => {
             {/* <MdDarkMode /> */}
           </button>
 
-          <div className="flex flex-col text-sm font-semibold">
-            <span className={`text-gray-600 text-[14px] md:text-lg flex flex-col text-sm font-semibold ${darkMode?'bg-[#f5f5f5]':'bg-black text-white'}`}>Music Languages</span>
+          <div className="hidden md:flex flex-col text-sm font-semibold">
+            <span className={`text-gray-600 text-[14px]  md:text-lg flex flex-col text-sm font-semibold ${darkMode?'bg-[#f5f5f5]':'bg-black text-white'}`}>Music Languages</span>
             <span className={`text-gray-500 text-[12px] hidden ${darkMode?'bg-[#f5f5f5]':'bg-black text-white'} lg:block`}>Hindi</span>
           </div>
-          <MdKeyboardArrowDown className="text-xl text-gray-500 ml-1" />
+          <MdKeyboardArrowDown className="hidden mg:block text-xl text-gray-500 ml-1" />
         </div>
 
         <ul className={`hidden lg:flex gap-5 text-gray-600 font-semibold ${darkMode?'bg-[#f5f5f5]':'bg-black text-white'}`}>
