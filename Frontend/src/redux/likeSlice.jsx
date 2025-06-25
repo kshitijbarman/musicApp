@@ -2,8 +2,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const likedSong = createSlice({
-    name: "like",  // 🔹 Keep name as "like" so it matches useSelector(state.like)
-    initialState: { liked: [] },  // 🔹 Changed from an array to an object
+    name: "like",  //
+    initialState: { liked: [] },  
     reducers: {
        
 

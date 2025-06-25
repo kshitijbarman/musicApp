@@ -1,34 +1,3 @@
-// import React from 'react'
-// import {BrowserRouter,Routes,Route} from 'react-router-dom'
-// import Home from './pages/Home';
-// import AlbumDetails from './pages/AlbumDetails';
-// import SignUpPage from './pages/SignUpPage';
-// import LoginPage from './pages/LoginPage';
-
-// const App = () => {
-//   return (
-//     <BrowserRouter>
-//       <Routes>
-//         <Route path='/' element={<Home/>}></Route>
-//         <Route path='/albums/:id' element={<AlbumDetails/>}></Route>
-//         <Route path='/sign-up' element={<SignUpPage/>}></Route>
-//         <Route path='/Login' element={<LoginPage/>}></Route>
-
-//       </Routes>
-//     </BrowserRouter>
-//   )
-// }
-
-// export default App
-
-
-
-
-
-
-
-
-
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './pages/Home';
@@ -66,7 +35,7 @@ const App = () => {
     },
     {
       path: "/",
-      element: isSignUp ? <Home /> : <Home /> // Moved inside App to access isSignUp
+      element: isSignUp ? <Home /> : <Home /> 
     },
    
   ]);

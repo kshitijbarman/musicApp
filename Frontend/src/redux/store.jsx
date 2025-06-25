@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import themeReducer from "./themeSlice";  // Import theme reducer
+import themeReducer from "./themeSlice";  
 import searchSlice from './searchSlice'
 import signupDatasclice from './signupDataSlice'
 import likedSong from './likeSlice';

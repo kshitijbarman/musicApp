@@ -22,27 +22,11 @@ const LoginForm=()=>{
         console.log("Stored User Data:", formData);
         console.log("Stored User Data:", localData);
 
-        
-      
-        // if(localData){
-        //     if(localData.email===formData.email&&localData.password===formData.password){
-        //         localStorage.setItem("isAuthenticated", "true");
-        //         navigate('/')
-        //     }
-        //     else{
-        //         alert("Enter Correct Email Password")
-        //     }
-        // }
-        // else{
-        //     alert("SignUp First")
-        // }
-
         if (!localData.email || !localData.password) {
             alert("SignUp First");
             return;
         }
 
-        // Validate credentials
         if (localData.email === formData.email && localData.password === formData.password) {
             localStorage.setItem("isAuthenticated", "true");
             navigate("/");
